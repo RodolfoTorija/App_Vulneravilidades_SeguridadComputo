@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Encabezados y enlaces a hojas de estilo, si es necesario -->
+</head>
+<body>
+    <h1>Código de Verificación</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form action="/verificar_codigo" method="post">
+        <label for="codigo_verificacion">Código de Verificación:</label>
+        <input type="text" id="codigo_verificacion" name="codigo_verificacion" required>
+        <button type="submit">Verificar</button>
+    </form>
+</body>
+</html>

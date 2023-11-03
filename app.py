@@ -105,7 +105,7 @@ def login():
 
         if usuario:
                 session['username'] = nombre # Almacenar el nombre de usuario en la sesión
-                return render_template('/home.html',  correcta = 'Has iniciado sesión correctamente')
+                return render_template('/verificacion.html',  correcta = 'Has iniciado sesión correctamente')
         else:
            
             # Nombre de usuario o contraseña incorrectos
